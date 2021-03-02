@@ -1,0 +1,17 @@
+# _data/navigation.yml
+primary:
+  - text: Home
+    href: /
+
+secondary:
+  - text: More 18F guides
+    href: https://18f.gsa.gov/guides/
+    external: true
+
+playbook:
+  - text: Step 1
+    href: /#
+  - text: Step 2
+    href: /#
+  - text: Step 3
+    href: /#

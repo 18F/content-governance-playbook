@@ -21,18 +21,60 @@
 title: 18F Content Governance Playbook
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is the future home of the 18F Content Governance Playbook.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 18F
 github_username:  18F
 
 # Build settings
-theme: uswds-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+
+markdown: kramdown
+highlighter: rouge
+theme: uswds-jekyll
+
+
+permalink: pretty
+incremental: true
+sass:
+  style: :compressed
+
+include: ['_pages']
+
+# Google Analytics & DAP tracking code for handbook
+google_analytics_ua: UA-48605964-19
+dap_agency: GSA
+dap_subagency: TTS
+
+# Add search site handle to enable search
+search_site_handle: 18f-content-playbook
+
+scripts:
+  - assets/uswds/js/uswds.min.js
+  - javascripts/private-eye.js
+  - javascripts/application.js
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: 18F
+  url: https://18f.gsa.gov
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: /assets/img/18f-logo.png
+logoalt: 18F
+
+back_link:
+  url: "https://guides.18f.gov/"
+  text: Read more 18F Guides
+
+repos:
+- name: 18F Content Governance Playbook
+  description: Main repository
+  url: https://github.com/18F/content-governance-playbook
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +95,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
