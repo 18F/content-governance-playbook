@@ -9,9 +9,21 @@ secondary:
     external: true
 
 playbook:
-  - text: Step 1
-    href: /#
-  - text: Step 2
-    href: /#
-  - text: Step 3
-    href: /#
+  - text: "Getting started"
+    href: /getting-started/
+  - text: "1: Auditing content"
+    href: /auditing/
+  - text: "2: Preparing to write"
+    href: /preparing/
+  - text: "3: Writing"
+    href: /writing/  
+  - text: "4: Reviewing"
+    href: /reviewing/
+  - text: "5: Drafting on your site"
+    href: /drafting/
+  - text: "6: Testing content"
+    href: /testing/
+  - text: "7: Approving and publishing"
+    href: /approving-publishing/
+  - text: "8: Revisiting content later"
+    href: /revisiting/
