@@ -36,9 +36,8 @@ markdown: kramdown
 highlighter: rouge
 theme: uswds-jekyll
 
-
 permalink: pretty
-incremental: true
+
 sass:
   style: :compressed
 
